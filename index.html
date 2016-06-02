@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/switch.css">
+	<link rel="stylesheet" href="css/lightbox.css">
+
+	<!-- <link rel="import" href="file://lightboxes.html"> -->
+
+</head>
+
+<body>
+	<div class="overlay" data-htextrainfo="22"></div>
+	<header>
+		<nav class="navbar navbar-default">
+		  <div class="container-fluid">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="#">SmartHome</a>
+		    </div>
+
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav navbar-right">
+		        <li><a href="#categories">Categories</a></li>
+		        <li><a href="#settings">Settings</a></li>
+		        <li><a href="#settings">Log Out</a></li>
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
+	</header>
+
+	<main>
+		<div class="container">
+			<section id="profile">
+				<div class="row">
+					<div class="col-md-12">
+						<span class="glyphicon glyphicon-user"></span>
+						<h1>Hello, <span id="user_name"></span></h1>
+					</div>
+				</div>
+			</section>
+			<section id="categories">
+				<h2>Categories</h2>
+				<div class="accordion-wrapper">
+					<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true" style="height: auto;">
+				  <div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="headingOne">
+				      <h4 class="panel-title">
+				        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+				          Lights
+			          	</a>
+				      </h4>
+				    </div>
+				    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+				      <div class="panel-body">
+				      	<div class="heading">Lights</div>
+				        <div class="row">
+				      		<div class="col-md-6">Master Bedroom</div>
+				      		<div class="col-md-6 controls">
+				      			<div>
+				      				<a class="btn btn-default" href="#lights_master_bedroom"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span></a>
+				      			</div>
+				      			<div class="widget">
+				      				<div class="onoffswitch">
+								    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+								    <label class="onoffswitch-label" for="myonoffswitch">
+								        <span class="onoffswitch-inner"></span>
+								        <span class="onoffswitch-switch"></span>
+								    </label>
+									</div>
+				      			</div>
+				      		</div>
+				      	</div>
+				        <div class="row">
+				      		<div class="col-md-6">Living room</div>
+				      		<div class="col-md-6 controls">
+				      			<div>
+				      				<a class="btn btn-default" href="#lights_living_room"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span></a>
+				      			</div>
+				      			<div class="widget">
+				      				<div class="onoffswitch">
+								    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+								    <label class="onoffswitch-label" for="myonoffswitch">
+								        <span class="onoffswitch-inner"></span>
+								        <span class="onoffswitch-switch"></span>
+								    </label>
+									</div>
+				      			</div>
+				      		</div>
+				      	</div>
+				      	<div class="row">
+				      		<div class="col-md-6">Kitchen</div>
+				      		<div class="col-md-6 controls">
+				      			<div>
+				      				<a class="btn btn-default" href="#lights_kitchen"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span></a>
+				      			</div>
+				      			<div class="widget">
+				      				<div class="onoffswitch">
+								    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+								    <label class="onoffswitch-label" for="myonoffswitch">
+								        <span class="onoffswitch-inner"></span>
+								        <span class="onoffswitch-switch"></span>
+								    </label>
+									</div>
+				      			</div>
+				      		</div>
+				      	</div>
+				      	<div class="row">
+				      		<div class="col-md-6">Children's room</div>
+				      		<div class="col-md-6 controls">
+				      			<div>
+				      				<a class="btn btn-default" href="#lights_children"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span></a>
+				      			</div>
+				      			<div class="widget">
+				      				<div class="onoffswitch">
+								    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+								    <label class="onoffswitch-label" for="myonoffswitch">
+								        <span class="onoffswitch-inner"></span>
+								        <span class="onoffswitch-switch"></span>
+								    </label>
+									</div>
+				      			</div>
+				      		</div>
+				      	</div>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="headingTwo">
+				      <h4 class="panel-title">
+				        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+				          Room temperature
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+				      <div class="panel-body">
+				      	<div class="heading">Room temperature</div>
+						<div class="row">
+				      		<div class="col-md-6">Master Bedroom</div>
+				      		<div class="col-md-6 controls">
+				      			<div>
+				      				<a class="btn btn-default" href="#temp_master_bedroom"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span></a>
+				      			</div>
+				      			<div class="widget">
+				      				<div class="onoffswitch">
+								    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+								    <label class="onoffswitch-label" for="myonoffswitch">
+								        <span class="onoffswitch-inner"></span>
+								        <span class="onoffswitch-switch"></span>
+								    </label>
+									</div>
+				      			</div>
+				      		</div>
+				      	</div>
+				        <div class="row">
+				      		<div class="col-md-6">Living room</div>
+				      		<div class="col-md-6 controls">
+				      			<div>
+				      				<a class="btn btn-default" href="#temp_living_room"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span></a>
+				      			</div>
+				      			<div class="widget">
+				      				<div class="onoffswitch">
+								    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+								    <label class="onoffswitch-label" for="myonoffswitch">
+								        <span class="onoffswitch-inner"></span>
+								        <span class="onoffswitch-switch"></span>
+								    </label>
+									</div>
+				      			</div>
+				      		</div>
+				      	</div>
+				      	<div class="row">
+				      		<div class="col-md-6">Kitchen</div>
+				      		<div class="col-md-6 controls">
+				      			<div>
+				      				<a class="btn btn-default" href="#temp_kitchen"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span></a>
+				      			</div>
+				      			<div class="widget">
+				      				<div class="onoffswitch">
+								    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+								    <label class="onoffswitch-label" for="myonoffswitch">
+								        <span class="onoffswitch-inner"></span>
+								        <span class="onoffswitch-switch"></span>
+								    </label>
+									</div>
+				      			</div>
+				      		</div>
+				      	</div>
+				      	<div class="row">
+				      		<div class="col-md-6">Children's room</div>
+				      		<div class="col-md-6 controls">
+				      			<div>
+				      				<a class="btn btn-default" href="#temp_children"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span></a>
+				      			</div>
+				      			<div class="widget">
+				      				<div class="onoffswitch">
+								    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+								    <label class="onoffswitch-label" for="myonoffswitch">
+								        <span class="onoffswitch-inner"></span>
+								        <span class="onoffswitch-switch"></span>
+								    </label>
+									</div>
+				      			</div>
+				      		</div>
+				      	</div>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="headingThree">
+				      <h4 class="panel-title">
+				        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+				          Music
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+				      <div class="panel-body">
+				      	<div class="heading">Music</div>
+				      	<div class="row">
+				      		<div class="col-md-6">Master Bedroom</div>
+				      		<div class="col-md-6 controls">
+				      			<div>
+				      				<a class="btn btn-default" href="#music_master_bedroom"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span></a>
+				      			</div>
+				      			<div class="widget">
+				      				<div class="onoffswitch">
+								    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+								    <label class="onoffswitch-label" for="myonoffswitch">
+								        <span class="onoffswitch-inner"></span>
+								        <span class="onoffswitch-switch"></span>
+								    </label>
+									</div>
+				      			</div>
+				      		</div>
+				      	</div>
+				        <div class="row">
+				      		<div class="col-md-6">Living room</div>
+				      		<div class="col-md-6 controls">
+				      			<div>
+				      				<a class="btn btn-default" href="#music_living_room"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span></a>
+				      			</div>
+				      			<div class="widget">
+				      				<div class="onoffswitch">
+								    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+								    <label class="onoffswitch-label" for="myonoffswitch">
+								        <span class="onoffswitch-inner"></span>
+								        <span class="onoffswitch-switch"></span>
+								    </label>
+									</div>
+				      			</div>
+				      		</div>
+				      	</div>
+				      	<div class="row">
+				      		<div class="col-md-6">Kitchen</div>
+				      		<div class="col-md-6 controls">
+				      			<div>
+				      				<a class="btn btn-default" href="#music_kitchen"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span></a>
+				      			</div>
+				      			<div class="widget">
+				      				<div class="onoffswitch">
+								    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+								    <label class="onoffswitch-label" for="myonoffswitch">
+								        <span class="onoffswitch-inner"></span>
+								        <span class="onoffswitch-switch"></span>
+								    </label>
+									</div>
+				      			</div>
+				      		</div>
+				      	</div>
+				      	<div class="row">
+				      		<div class="col-md-6">Children's room</div>
+				      		<div class="col-md-6 controls">
+				      			<div>
+				      				<a class="btn btn-default" href="#music_children"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span></a>
+				      			</div>
+				      			<div class="widget">
+				      				<div class="onoffswitch">
+								    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+								    <label class="onoffswitch-label" for="myonoffswitch">
+								        <span class="onoffswitch-inner"></span>
+								        <span class="onoffswitch-switch"></span>
+								    </label>
+									</div>
+				      			</div>
+				      		</div>
+				      	</div>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="headingFour">
+				      <h4 class="panel-title">
+				        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+				          Coffee-machine
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+				      <div class="panel-body">
+				      	<div class="heading">Cofee-machine</div>				     
+				        <div>
+				        	<div class="widget">
+				      				<div class="onoffswitch">
+								    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+								    <label class="onoffswitch-label" for="myonoffswitch">
+								        <span class="onoffswitch-inner"></span>
+								        <span class="onoffswitch-switch"></span>
+								    </label>
+									</div>
+				      			</div>
+				      		<input type="range" value="80">
+				        </div>
+				      </div>
+				    </div>
+				  </div>
+					</div>
+				</div>
+			</section>
+			<section id="settings">
+				<h2>Settings</h2>
+				<div class="user_settings">
+					<form class="form-horizontal">
+					  <div class="form-group">
+					    <label class="col-md-2 col-xs-4 control-label">Edit user name</label>
+					    <div class="col-md-4 col-xs-4">
+					      <input class="form-control" type="text" name="user_name" value="daffy">
+					    </div>
+					    <div class="col-md-4 col-xs-2">
+					  		<a class="btn btn-default" href="#save_name">Save</a>
+					    </div>
+					  </div>
+					  <div class="form-group">
+					    <label for="inputPassword" class="col-md-2 col-xs-4 control-label">Password</label>
+					    <div class="col-md-6 col-xs-8">
+					      <a class="btn btn-default" href="#reset_password">Reset password</a>
+					    </div>
+					  </div>
+					</form>
+				</div>
+				<div>
+					<h3>Users</h3>
+					<table class="table" align="center">
+						<tr>
+							<td>Ben</td>
+							<td align="right">
+								<a class="btn btn-default" href="#user_1_edit"><span class="glyphicon glyphicon-edit"></span></a>
+								<a class="btn btn-default" href="#user_1_delete"><span class="glyphicon glyphicon-trash"></span></a>
+							</td>
+						</tr>
+						<tr>
+							<td>Maria</td>
+							<td align="right">
+								<a class="btn btn-default" href="#user_2_edit"><span class="glyphicon glyphicon-edit"></span></a>
+								<a class="btn btn-default" href="#user_2_delete"><span class="glyphicon glyphicon-trash"></span></a>
+							</td>
+						</tr>
+					</table>
+					<a class="btn btn-default" href="#add_new_user">Add new user</a>
+				</div>
+			</section>
+		</div>
+	</main>
+	
+	<div id="modals" style="display: none">
+		<!-- Lights -->
+		<div id="lights_master_bedroom" class="popup-modal mfp-hide">
+			<div class="lightbox_header">
+				<h2>Lights in master bedroom</h2>
+			</div>
+			<div class="lightbox_content">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						Main lamp
+						<span class="right glyphicon glyphicon-trash"></span>
+					</div>
+					<div class="panel-body">
+						<label for="input_role">Type of lamp</br>
+						    <label><input type="radio" name="input_type_lamp" /> On/Off </label></br>
+						    <label><input type="radio" name="input_type_lamp" /> Progress lamp </label>
+						</label>
+					</div>
+				</div>
+				<div class="panel panel-default">
+				  <div class="panel-heading">Bed lamp<span class="right glyphicon glyphicon-trash"></span></div>
+				  <div class="panel-body">
+				    <label for="input_role">Type of lamp</br>
+				        <label><input type="radio" name="input_type_lamp" /> On/Off </label></br>
+				        <label><input type="radio" name="input_type_lamp" /> Progress lamp </label>
+			    	</label>
+				  </div>
+				</div>
+				<a class="btn btn-default" href="#">Add lamp</a>
+			</div>		
+		</div>
+		<div id="lights_living_room" class="popup-modal mfp-hide">
+			<div class="lightbox_header">
+				<h2>Lights in living room</h2>
+			</div>
+			<div class="lightbox_content">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						Main lamp
+						<span class="right glyphicon glyphicon-trash"></span>
+					</div>
+					<div class="panel-body">
+						<label for="input_role">Type of lamp</br>
+						    <label><input type="radio" name="input_type_lamp" /> On/Off </label></br>
+						    <label><input type="radio" name="input_type_lamp" /> Progress lamp </label>
+						</label>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">Aside lamp<span class="right glyphicon glyphicon-trash"></span></div>
+					<div class="panel-body">
+						<label for="input_role">Type of lamp</br>
+						    <label><input type="radio" name="input_type_lamp" /> On/Off </label></br>
+						    <label><input type="radio" name="input_type_lamp" /> Progress lamp </label>
+						</label>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">Balcony lamp<span class="right glyphicon glyphicon-trash"></span></div>
+					<div class="panel-body">
+						<label for="input_role">Type of lamp</br>
+						    <label><input type="radio" name="input_type_lamp" /> On/Off </label></br>
+						    <label><input type="radio" name="input_type_lamp" /> Progress lamp </label>
+						</label>
+					</div>
+				</div>
+				<a class="btn btn-default" href="#">Add lamp</a>
+			</div>		
+		</div>
+		<div id="lights_kitchen" class="popup-modal mfp-hide">
+			<div class="lightbox_header">
+				<h2>Lights in the kitchen</h2>
+			</div>
+			<div class="lightbox_content">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						Main lamp
+						<span class="right glyphicon glyphicon-trash"></span>
+					</div>
+					<div class="panel-body">
+						<label for="input_role">Type of lamp</br>
+						    <label><input type="radio" name="input_type_lamp" /> On/Off </label></br>
+						    <label><input type="radio" name="input_type_lamp" /> Progress lamp </label>
+						</label>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">Above the sink lamps<span class="right glyphicon glyphicon-trash"></span></div>
+					<div class="panel-body">
+						<label for="input_role">Type of lamp</br>
+						    <label><input type="radio" name="input_type_lamp" /> On/Off </label></br>
+						    <label><input type="radio" name="input_type_lamp" /> Progress lamp </label>
+						</label>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">Kitchen absorber lamp<span class="right glyphicon glyphicon-trash"></span></div>
+					<div class="panel-body">
+						<label for="input_role">Type of lamp</br>
+						    <label><input type="radio" name="input_type_lamp" /> On/Off </label></br>
+						    <label><input type="radio" name="input_type_lamp" /> Progress lamp </label>
+						</label>
+					</div>
+				</div>
+				<a class="btn btn-default" href="#">Add lamp</a>
+			</div>				
+		</div>
+		<div id="lights_children" class="popup-modal mfp-hide">
+			<div class="lightbox_header">
+				<h2>Lights in the children's room</h2>
+			</div>
+			<div class="lightbox_content">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						Main lamp
+						<span class="right glyphicon glyphicon-trash"></span>
+					</div>
+					<div class="panel-body">
+						<label for="input_role">Type of lamp</br>
+						    <label><input type="radio" name="input_type_lamp" /> On/Off </label></br>
+						    <label><input type="radio" name="input_type_lamp" /> Progress lamp </label>
+						</label>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">Maria's lava lamp<span class="right glyphicon glyphicon-trash"></span></div>
+					<div class="panel-body">
+						<label for="input_role">Type of lamp</br>
+						    <label><input type="radio" name="input_type_lamp" /> On/Off </label></br>
+						    <label><input type="radio" name="input_type_lamp" /> Progress lamp </label>
+						</label>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">Baby's bedside lamp<span class="right glyphicon glyphicon-trash"></span></div>
+					<div class="panel-body">
+						<label for="input_role">Type of lamp</br>
+						    <label><input type="radio" name="input_type_lamp" /> On/Off </label></br>
+						    <label><input type="radio" name="input_type_lamp" /> Progress lamp </label>
+						</label>
+					</div>
+				</div>
+				<a class="btn btn-default" href="#">Add lamp</a>
+			</div>		
+		</div>
+		<!-- Room temperature -->
+		<div id="temp_master_bedroom" class="popup-modal mfp-hide">
+			FUCK		
+		</div>
+		<div id="temp_living_room" class="popup-modal mfp-hide">
+			FUCK		
+		</div>
+		<div id="temp_kitchen" class="popup-modal mfp-hide">
+			FUCK		
+		</div>
+		<div id="temp_children" class="popup-modal mfp-hide">
+			FUCK		
+		</div>
+
+		<!-- Music -->
+		<div id="music_master_bedroom" class="popup-modal mfp-hide">
+			FUCK		
+		</div>
+		<div id="music_living_room" class="popup-modal mfp-hide">
+			FUCK		
+		</div>
+		<div id="music_kitchen" class="popup-modal mfp-hide">
+			FUCK		
+		</div>
+		<div id="music_children" class="popup-modal mfp-hide">
+			FUCK		
+		</div>
+
+		<!-- Settings -->
+		<div id="save_name" class="popup-modal mfp-hide">
+			Your user name has been successfully changed. Thank you!		
+		</div>
+		<div id="reset_password" class="popup-modal mfp-hide">
+			Temporary password was sent to your current email address.	
+		</div>
+
+		<!-- Users -->
+		<div id="user_1_edit" class="popup-modal mfp-hide">
+			<div class="lightbox_header">
+				<h2>Edit User</h2>
+			</div>
+			<div class="lightbox_content">
+				<form>
+				  <div class="form-group">
+				    <label for="input_email">Email address</label>
+				    <input type="email" class="form-control" id="input_email" placeholder="Email" value="ben@gmail.com">
+				  </div>
+				  <div class="form-group">
+				    <label for="input_name">User name</label>
+				    <input type="text" class="form-control" id="input_name" placeholder="User name" value="Ben">
+				  </div>
+				  <div class="form-group">
+			        <label for="input_role">User role
+				        <p><label><input type="radio" name="input_role" /> Master user</label></p>
+				        <p><label><input type="radio" name="input_role" checked /> Regular user</label></p>
+				        <p><label><input type="radio" name="input_role" /> Child</label></p>
+			    	</label>
+				  </div>
+				  <button type="submit" class="btn btn-default">OK</button>
+				  <button type="cancel" class="btn btn-default">Cancel</button>
+				</form>
+			</div>				
+		</div>
+		<div id="user_1_delete" class="popup-modal mfp-hide">
+			Are you sure you want to delete this user?		
+		</div>
+		<div id="user_2_edit" class="popup-modal mfp-hide">
+			<div class="lightbox_header">
+				<h2>Edit User</h2>
+			</div>
+			<div class="lightbox_content">
+				<form>
+				  <div class="form-group">
+				    <label for="input_email">Email address</label>
+				    <input type="email" class="form-control" id="input_email" placeholder="Email" value="maria@gmail.com">
+				  </div>
+				  <div class="form-group">
+				    <label for="input_name">User name</label>
+				    <input type="text" class="form-control" id="input_name" placeholder="User name" value="Maria">
+				  </div>
+				  <div class="form-group">
+			        <label for="input_role">User role
+				        <p><label><input type="radio" name="input_role" /> Master user</label></p>
+				        <p><label><input type="radio" name="input_role" /> Regular user</label></p>
+				        <p><label><input type="radio" name="input_role" checked /> Child</label></p>
+			    	</label>
+				  </div>
+				  <button type="submit" class="btn btn-default">OK</button>
+				  <button type="cancel" class="btn btn-default">Cancel</button>
+				</form>
+			</div>						
+		</div>
+		<div id="user_2_delete" class="popup-modal mfp-hide">
+			Are you sure you want to delete this user?		
+		</div>
+		<div id="add_new_user" class="popup-modal mfp-hide">
+			<div class="lightbox_header">
+				<h2>New User</h2>
+			</div>
+			<div class="lightbox_content">
+				<form>
+				  <div class="form-group">
+				    <label for="input_email">Email address</label>
+				    <input type="email" class="form-control" id="input_email" placeholder="Email">
+				  </div>
+				  <div class="form-group">
+				    <label for="input_name">User name</label>
+				    <input type="text" class="form-control" id="input_name" placeholder="User name">
+				  </div>
+				  <div class="form-group">
+			        <label for="input_role">User role
+				        <p><label><input type="radio" name="input_role" /> Master user</label></p>
+				        <p><label><input type="radio" name="input_role" /> Regular user</label></p>
+				        <p><label><input type="radio" name="input_role" /> Child</label></p>
+			    	</label>
+				  </div>
+				  <button type="submit" class="btn btn-default">OK</button>
+				  <button type="cancel" class="btn btn-default">Cancel</button>
+				</form>
+			</div>		
+		</div>
+	</div>
+
+	<footer class="footer">
+		<div>Made by: Dafina Karamanoleva - 61695, Cvetelina Stoyanova - 61722, Adela Naneva - 61657, Kostadin Samardzhiev - 61673</div>
+		<div><b>Design of human-machine interface</b></div>
+	</footer>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<script src="js/plugins.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

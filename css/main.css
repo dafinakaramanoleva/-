@@ -1,0 +1,123 @@
+html {
+	height: 100%;
+	position: relative;
+}
+
+
+section {
+	padding: 20px 0px;
+}
+
+body {
+	height: 100%;
+	background: url(../images/background.jpg) no-repeat center center fixed;
+	background-size: cover;
+	min-height: 100%;
+}
+
+footer {
+	position: relative;
+	z-index: 2;
+  background-color: #f8f8f8;
+  border-color: #e7e7e7;
+  height: 70px;
+  margin-bottom: 0;
+  padding: 10px 0;
+}
+
+footer div {
+	padding-left: 10px;
+	text-align: center;
+}
+
+.navbar {
+	margin-bottom: 50px;
+}
+.overlay {
+	background: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+h4 a {
+	display: block;
+}
+.container {
+	background-color: #f8f8f8;
+	margin-bottom: 70px;
+	position: relative;
+	z-index: 2;
+}
+.accordion-wrapper {
+	position: relative;
+}
+.controls > *, .right{
+	float: right;
+}
+
+.left {
+	float: left;
+}
+
+.panel-default > .panel-heading {
+  background-color: #fff;
+}
+
+.panel-body .btn {
+	margin-left: 5px;
+}
+
+.glyphicon-user {
+	margin-right: 20px;
+	font-size: 80px;
+	float: left;
+}
+
+.user_settings form {
+	background-color: #fff;
+	padding: 20px;	
+}
+
+.heading {
+  display: none;
+}
+
+.table tbody {
+  background-color: #fff;
+}
+
+/* Responsive */
+@media screen and (min-width: 1170px) {
+    .panel-group {
+    	display: inline-block;
+    	width: 200px;
+    }
+
+    .panel-heading {
+    	position: relative;
+    	z-index: 9;
+    }
+
+    .panel-collapse {
+    	position: absolute;
+    	padding-left: 220px;
+    	width: 100%;
+    	top: 0;
+    	left: 0;
+    }
+    .panel-body {
+    	background: white;
+    }
+
+    .heading {
+      display: block;
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+      font-size: 20px;
+      border-bottom: 1px solid #e3e3e3;
+      font-weight: bold;
+    }
+}
+
