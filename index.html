@@ -8,9 +8,6 @@
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/switch.css">
 	<link rel="stylesheet" href="css/lightbox.css">
-
-	<!-- <link rel="import" href="file://lightboxes.html"> -->
-
 </head>
 
 <body>
@@ -313,16 +310,24 @@
 				      <div class="panel-body">
 				      	<div class="heading">Cofee-machine</div>				     
 				        <div>
-				        	<div class="widget">
-				      				<div class="onoffswitch">
+				        	<div class="widget left">
+			      				<div class="onoffswitch">
 								    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
 								    <label class="onoffswitch-label" for="myonoffswitch">
 								        <span class="onoffswitch-inner"></span>
 								        <span class="onoffswitch-switch"></span>
-								    </label>
-									</div>
-				      			</div>
-				      		<input type="range" value="80">
+							    	</label>
+								</div>
+			      			</div>
+			      			<div class="right">
+								<a class="btn btn-default" href="#make-coffee">Make coffee</a>
+							</div>
+			      			<div class="coffee-machine-amounts">
+				      			<div class="heading">Amount of products</div>	
+				      			<p><label for="range_water">Water </label><input type="range" name="range_water" value="80"/></p>
+						      	<p><label>Coffee </label><input type="range" name="range_coffee" value="45"/></p>
+						      	<p><label>Milk </label><input type="range" name="range_milk" value="0"/><span class="warning-message">You don't have any milk in the container. Please fill up!</span></p>
+					      	</div>
 				        </div>
 				      </div>
 				    </div>
@@ -546,6 +551,23 @@
 		</div>
 		<div id="music_children" class="popup-modal mfp-hide">
 			FUCK		
+		</div>
+
+		<!-- Coffee-machine -->
+		<div id="make-coffee" class="popup-modal mfp-hide">
+			<div class="lightbox_header">
+				<h2>What about ingredients?</h2>
+			</div>
+			<div class="lightbox_content">
+				<div class="panel panel-default">
+					<div class="panel-body">
+					    <label>Coffee strength</label><input type="range" /></br>
+					    <label>Milk</label><input type="range" />
+					</div>
+				</div>
+				<a class="btn btn-default" href="#">OK</a>
+				<a class="btn btn-default" href="#">Cancel</a>
+			</div>
 		</div>
 
 		<!-- Settings -->
