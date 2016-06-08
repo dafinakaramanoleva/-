@@ -2,7 +2,7 @@ $(function(){
 
     // $("#includedLightboxes").load("lightboxes.html"); 
 
-	//setting the user's name
+	// Setting the user's name
 	$('#user_name').html($("input[name=user_name]").val())
 
 	if($(window).width() >= 1170) {
@@ -16,8 +16,14 @@ $(function(){
 		})
 	}
 
+	// Add class to active categories
+	$('.panel-heading a').on('click', function() {
+		$('.panel-heading').removeClass('active');
+    	$(this).parents('.panel-heading').addClass('active');
+	});
+
 	//Init lightbox
-	var btnInit = $('.btn-default');
+	var btnInit = $('.btn');
 
 	btnInit.magnificPopup({
 	type:'inline',

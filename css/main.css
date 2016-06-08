@@ -10,9 +10,13 @@ section {
 
 body {
 	height: 100%;
-	background: url(../images/background.jpg) no-repeat center center fixed;
-	background-size: cover;
 	min-height: 100%;
+  background: #eee;
+  color: #333;
+}
+
+body * {
+  color: #333;
 }
 
 footer {
@@ -20,8 +24,8 @@ footer {
 	z-index: 2;
   background-color: #f8f8f8;
   border-color: #e7e7e7;
-  margin-bottom: 0;
-  padding: 10px 0;
+  margin: 0 -15px 0 -15px;
+  padding: 30px;
 }
 
 footer div {
@@ -29,8 +33,182 @@ footer div {
 	text-align: center;
 }
 
+header {
+  margin: 0 -15px 50px -15px;
+  background: url(../images/header.png) no-repeat scroll center center transparent;
+  background-size: cover;
+}
+
+#profile {
+  padding: 20px;
+  position: relative;
+}
+
+#profile > .row, #profile > .row > div {
+  position: static;
+}
+
+#profile h1 {
+  font-size: 20px;
+  position: absolute;
+  left: 200px;
+  bottom: -30px;
+  margin: 0;
+}
+
+#profile .image-wrapper {
+  border-radius: 50%;
+  display: inline-block;
+  float: left;
+  margin: 30px 0 -100px;
+}
+
+#profile .image-wrapper img {
+  border-radius: 50%;
+  max-width: 170px;
+  height: auto;
+  border: 10px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Accordion */
+.accordion-wrapper {
+  background: #fff;
+  border: 20px solid #fff;
+  border-top-width: 40px;
+  border-bottom-width: 40px;
+}
+
+#accordion .panel-default, #accordion .panel-default > .panel-heading {
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
+  background: transparent;
+  padding: 0;
+}
+
+#accordion .panel-heading a {
+  padding: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none!important;
+  position: relative;
+}
+
+#accordion .panel-heading a:focus {
+  outline: none;
+}
+
+#accordion .panel-heading a:after {
+  content: "";
+  display: none;
+  height: 5px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #71c972;
+}
+
+#accordion .panel-body {
+  border-top: none;
+  padding: 40px 40px 40px;
+}
+
+#accordion .panel-heading.active a:after {
+  display: block;
+}
+
+#accordion .panel-heading i {
+  font-size: 16px;
+  margin-right: 10px;
+  width: 16px;
+  display: inline-block;
+  text-align: center;
+}
+
+#accordion .panel-heading.active {
+  background: #71C972;
+  color: #fff;
+}
+
+#accordion .panel-heading.active i {
+  color: #fff;
+}
+
+#accordion .panel-default {
+  margin: 0;
+  background: transparent;
+}
+
+/* Room Items */
+
+.room-item {
+  background: #71C972;
+  margin-bottom: 30px;
+  min-height: 280px;
+}
+
+.room-item h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+  color: #fff;
+  border-bottom: 1px solid #8ED88F;
+  overflow: auto;
+  line-height: 34px;
+}
+
+.room-item .btn {
+  background: #fff;
+  border-radius: 0;
+  float: right;
+}
+
+.room-content {
+  padding: 20px;
+}
+
+.room-content p {
+  color: #fff;
+}
+
+.room-switch {
+  padding: 20px;
+}
+
+.room-bedroom {
+  background: url(../images/bedroom-icon.png) no-repeat scroll -80% 130% #71C972;
+}
+
+.room-living {
+  background: url(../images/living-icon.png) no-repeat scroll -80% 100% #71C972;
+}
+
+.room-kitchen {
+  background: url(../images/kitchen-icon.png) no-repeat scroll -90% 500% #71C972;
+}
+
+.room-children {
+  background: url(../images/chlidren-icon.png) no-repeat scroll -50% 100% #71C972;
+}
+
+section h2 {
+  background: #fff;
+  padding: 20px;
+  font-size: 18px;
+  margin-bottom: 1px;
+}
+
+h2 i {
+  color: #71C972;
+  margin-right: 10px;
+}
+
 .navbar {
-	margin-bottom: 50px;
+  border: none;
+  border-radius: 0;
+  margin: 0;
 }
 .overlay {
 	background: rgba(0, 0, 0, 0.6);
@@ -44,8 +222,9 @@ h4 a {
 	display: block;
 }
 .container {
+  margin-top: 50px;
 	background-color: #f8f8f8;
-	margin-bottom: 70px;
+	margin-bottom: 50px;
 	position: relative;
 	z-index: 2;
 }
@@ -100,6 +279,11 @@ input[type="range"] {
   width: 60%;
 }
 
+input[type="number"] {
+  width: 50%;
+  display: inline-block;
+}
+
 /* Responsive */
 @media screen and (min-width: 1170px) {
     .panel-group {
@@ -114,13 +298,19 @@ input[type="range"] {
 
     .panel-collapse {
     	position: absolute;
-    	padding-left: 220px;
+    	padding-left: 200px;
     	width: 100%;
     	top: 0;
     	left: 0;
     }
     .panel-body {
     	background: white;
+      position: relative;
+      border-left: 5px solid #71c972;
+    }
+
+    #accordion .panel-body {
+      padding: 0 0 40px 40px;
     }
 
     .heading {
