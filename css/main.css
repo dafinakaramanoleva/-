@@ -193,6 +193,51 @@ header {
   background: url(../images/chlidren-icon.png) no-repeat scroll -50% 100% #71C972;
 }
 
+.room-music {
+  background: url(../images/music-icon.png) no-repeat scroll -50% 100% #71C972;
+}
+
+/*Add music device*/
+.room-music-add {
+  background: #ddd;
+  position: relative;
+  height: 367px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.room-music-add * {
+  color: #fff;
+}
+
+.alert {
+  color: #a24242;
+  font-weight: bold;
+}
+
+.room-music-add .room-content {
+  position: absolute;
+  display: inline-block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+.room-music-add span {
+  display: block;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.room-music-add i {
+  display: block;
+  font-size: 122px;
+}
+
 /*TempWidget*/
 .temperature-section .room-content {
   text-align: center;
@@ -260,6 +305,13 @@ header {
   -ms-user-select: none;       
   user-select: none;  
 }
+
+/* Users */
+.users-wapper {
+  padding: 20px;
+  background: #fff;
+}
+
 
 /* Music */
 input[type='range'] {
@@ -403,6 +455,10 @@ h2 i {
   border: none;
   border-radius: 0;
   margin: 0;
+}
+.navbar-brand i {
+  color: #777;
+  margin-right: 5px;
 }
 .overlay {
 	background: rgba(0, 0, 0, 0.6);
