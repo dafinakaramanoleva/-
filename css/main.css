@@ -49,11 +49,14 @@ header {
 }
 
 #profile h1 {
-  font-size: 20px;
+  font-size: 25px;
   position: absolute;
   left: 200px;
-  bottom: -30px;
+  bottom: -60px;
   margin: 0;
+}
+#profile h1 .role {
+  font-size: 18px;
 }
 
 #profile .image-wrapper {
