@@ -456,9 +456,18 @@ h2 i {
   border-radius: 0;
   margin: 0;
 }
+
 .navbar-brand i {
   color: #777;
   margin-right: 5px;
+  border-bottom: 2px solid #71C972;
+  border-bottom-left-radius: 5px;
+}
+.navbar-brand span {
+  font-weight: bold;
+  color: #71C972;
+  border-top-left-radius: 5px;
+  border-top: 2px solid #71C972;
 }
 .overlay {
 	background: rgba(0, 0, 0, 0.6);
