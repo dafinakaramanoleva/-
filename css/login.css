@@ -1,0 +1,23 @@
+body {
+	background: url(../images/header.png) no-repeat scroll center center transparent;
+	background-size: cover;
+}
+.login {
+    position: relative;
+    padding: 20px;
+    width: 60%;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+}
+.login-head {
+	padding: 0 0 30px;
+	text-align: center;
+}
+.login-head a {
+	font-size: 32px;
+}

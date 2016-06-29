@@ -1,7 +1,4 @@
 $(function(){
-
-    // $("#includedLightboxes").load("lightboxes.html"); 
-
 	// Setting the user's name
 	$('#user_name').html($("input[name=user_name]").val())
 
